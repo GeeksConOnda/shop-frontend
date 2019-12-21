@@ -37,6 +37,22 @@
     {
       "source": "/comprar/beerjscba-white",
       "destination": "https://forms.gle/1P6Q9Pus3baY1wcd7"
+    },
+    {
+      "source": "/comprar/coffeedev-calm-notebook",
+      "destination": "https://forms.gle/GQTEdyd5XwAdp49K7"
+    },
+    {
+      "source": "/comprar/coffeedev-calm-mug",
+      "destination": "https://forms.gle/CrrEtaC6L1tLAEMn8"
+    },
+    {
+      "source": "/comprar/coffeedev-party-notebook",
+      "destination": "https://forms.gle/1MzNtANxUgo4ogmU7"
+    },
+    {
+      "source": "/comprar/coffeedev-party-mug",
+      "destination": "https://forms.gle/J9UnrXpnSLD2gAjv8"
     }
   ]
 }

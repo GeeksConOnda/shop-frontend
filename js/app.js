@@ -3,6 +3,7 @@ var state = {
 };
 
 var catalogs = document.querySelectorAll("section[data-category]");
+var buyButtons = document.querySelectorAll("a.buy");
 
 function showProducts(/** @type HashChangeEvent|string */ eventOrCategory) {
   var newCategory = eventOrCategory;
@@ -21,6 +22,7 @@ function showProducts(/** @type HashChangeEvent|string */ eventOrCategory) {
       catalog.style.display = catalog.dataset['category'] === newCategory ? 'block' : 'none';
       catalog.querySelector("header").style.display = "none";
     });
+    gtag("event", "view_search_results", { search_term: newCategory });
   }
 
   state.category = newCategory;
@@ -35,5 +37,17 @@ function menu() {
   });
 }
 
+function trackPurchaseIntention() {
+  buyButtons.forEach(function (/** @type HTMLAnchorElement */ buyButton) {
+    buyButton.addEventListener("click", function () {
+      event.preventDefault();
+      gtag("event", "begin_checkout", { event_value: buyButton.parentElement.querySelector(".price").innerHTML.substr(2) });
+      window.location.replace(buyButton.href);
+    });
+  });
+}
+
 window.addEventListener("hashchange", showProducts);
+
 showProducts({ newURL: window.location.href });
+trackPurchaseIntention();
