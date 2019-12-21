@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "name": "geeks-con-onda",
+  "redirects": [
+    {
+      "source": "/comprar/happydroid-status-black",
+      "destination": "https://forms.gle/YS4DH2xAx4XmKbrA6"
+    },
+    {
+      "source": "/comprar/happydroid-status-white",
+      "destination": "https://forms.gle/wdair3DyB9zMbAKe8"
+    },
+    {
+      "source": "/comprar/happydroid-icecream-black",
+      "destination": "https://forms.gle/PqWPpkPXvST7Nza68"
+    },
+    {
+      "source": "/comprar/happydroid-icecream-white",
+      "destination": "https://forms.gle/zUYrui1QZy7tbFB9A"
+    },
+    {
+      "source": "/comprar/happydroid-nappy-black",
+      "destination": "https://forms.gle/iPEKondYjbJQUrJt7"
+    },
+    {
+      "source": "/comprar/happydroid-nappy-white",
+      "destination": "https://forms.gle/wkSHDvH765ZMCay27"
+    },
+    {
+      "source": "/comprar/coffeedev-npmi-tshirt",
+      "destination": "https://forms.gle/Jw4VEYjFhYR7NikQ7"
+    },
+    {
+      "source": "/comprar/beerjscba-black",
+      "destination": "https://forms.gle/uvDNFau3vXjUtRVq5"
+    },
+    {
+      "source": "/comprar/beerjscba-white",
+      "destination": "https://forms.gle/1P6Q9Pus3baY1wcd7"
+    }
+  ]
+}
