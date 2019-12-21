@@ -29,7 +29,7 @@ function showProducts(/** @type HashChangeEvent|string */ eventOrCategory) {
 function menu() {
   var menuItems = document.querySelectorAll("nav li a");
   menuItems.forEach(function (menuItem) {
-    menuItem.addEventListener('click', function (event) {
+    menuItem.addEventListener('click', function () {
       showProducts(menuItem.getAttribute('href').substr(1));
     });
   });
