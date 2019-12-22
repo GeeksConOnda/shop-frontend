@@ -42,7 +42,7 @@ function trackPurchaseIntention() {
     buyButton.addEventListener("click", function () {
       event.preventDefault();
       gtag("event", "begin_checkout", { event_value: buyButton.parentElement.querySelector(".price").innerHTML.substr(2) });
-      window.location.replace(buyButton.href);
+      window.location = buyButton.href;
     });
   });
 }
