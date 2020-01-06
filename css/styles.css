@@ -75,10 +75,14 @@ main {
   padding-bottom: 100px;
 }
 
-p.notice {
+p.notice, p.notice span {
   text-align: center;
   color: var(--color-primary-light);
   font-weight: 700;
+}
+
+p.notice span { 
+  display: block;
 }
 
 section[data-category] {
@@ -173,9 +177,40 @@ footer {
   width: 100px;
 }
 
+section[data-category='stickers'] p.notice {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+section[data-category='stickers'] p.notice img {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
 @media screen and (max-width: 768px) {
   main {
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  section[data-category] header {
+    font-size: 3.5rem;
+  }
+
+  section[data-category='stickers'] p.notice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section[data-category='stickers'] p.notice img {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+
+  section[data-category='stickers'] ul li {
+    flex: 100% !important;
   }
 
   nav {
