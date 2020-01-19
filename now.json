@@ -39,6 +39,10 @@
       "destination": "https://geekscononda.mercadoshops.com.ar/beerjs"
     },
     {
+      "source": "/todo-python",
+      "destination": "https://geekscononda.mercadoshops.com.ar/python"
+    },
+    {
       "source": "/comprar/remera-python",
       "destination": "https://geekscononda.mercadoshops.com.ar/remera-python"
     },
