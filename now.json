@@ -47,6 +47,10 @@
       "destination": "https://geekscononda.mercadoshops.com.ar/beerjs"
     },
     {
+      "source": "/comprar/remera-coffeedev",
+      "destination": "https://geekscononda.mercadoshops.com.ar/taza-coleccion-coffeedev"
+    },
+    {
       "source": "/comprar/taza-coffeedev",
       "destination": "https://geekscononda.mercadoshops.com.ar/taza-coleccion-coffeedev"
     },
