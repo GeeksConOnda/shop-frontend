@@ -40,7 +40,11 @@
     },
     {
       "source": "/comprar/remera-python",
-      "destination": "https://geekscononda.mercadoshops.com.ar/python"
+      "destination": "https://geekscononda.mercadoshops.com.ar/remera-python"
+    },
+    {
+      "source": "/comprar/taza-python",
+      "destination": "https://geekscononda.mercadoshops.com.ar/taza-python"
     },
     {
       "source": "/comprar/beerjscba-black",
