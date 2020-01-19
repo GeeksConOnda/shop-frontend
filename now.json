@@ -3,6 +3,10 @@
   "name": "geekscononda",
   "redirects": [
     {
+      "source": "/comprar/remera-happydroid",
+      "destination": "https://geekscononda.mercadoshops.com.ar/happy-droid"
+    },
+    {
       "source": "/comprar/happydroid-status-black",
       "destination": "https://geekscononda.mercadoshops.com.ar/happy-droid"
     },
