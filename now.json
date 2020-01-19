@@ -31,12 +31,24 @@
       "destination": "https://geekscononda.mercadoshops.com.ar/remera-coleccion-coffeedev"
     },
     {
+      "source": "/comprar/remera-beerjs",
+      "destination": "https://geekscononda.mercadoshops.com.ar/beerjs"
+    },
+    {
       "source": "/comprar/beerjscba-black",
       "destination": "https://geekscononda.mercadoshops.com.ar/beerjs"
     },
     {
       "source": "/comprar/beerjscba-yellow",
       "destination": "https://geekscononda.mercadoshops.com.ar/beerjs"
+    },
+    {
+      "source": "/comprar/taza-coffeedev",
+      "destination": "https://geekscononda.mercadoshops.com.ar/taza-coleccion-coffeedev"
+    },
+    {
+      "source": "/comprar/cuaderno-coffeedev",
+      "destination": "https://geekscononda.mercadoshops.com.ar/cuaderno-a5-coffee-dev"
     },
     {
       "source": "/comprar/coffeedev-calm-notebook",
