@@ -4,55 +4,55 @@
   "redirects": [
     {
       "source": "/comprar/happydroid-status-black",
-      "destination": "https://forms.gle/YS4DH2xAx4XmKbrA6"
+      "destination": "https://geekscononda.mercadoshops.com.ar/happy-droid"
     },
     {
       "source": "/comprar/happydroid-status-white",
-      "destination": "https://forms.gle/wdair3DyB9zMbAKe8"
+      "destination": "https://geekscononda.mercadoshops.com.ar/happy-droid"
     },
     {
       "source": "/comprar/happydroid-icecream-black",
-      "destination": "https://forms.gle/PqWPpkPXvST7Nza68"
+      "destination": "https://geekscononda.mercadoshops.com.ar/happy-droid"
     },
     {
       "source": "/comprar/happydroid-icecream-white",
-      "destination": "https://forms.gle/zUYrui1QZy7tbFB9A"
+      "destination": "https://geekscononda.mercadoshops.com.ar/happy-droid"
     },
     {
       "source": "/comprar/happydroid-nappy-black",
-      "destination": "https://forms.gle/iPEKondYjbJQUrJt7"
+      "destination": "https://geekscononda.mercadoshops.com.ar/happy-droid"
     },
     {
       "source": "/comprar/happydroid-nappy-white",
-      "destination": "https://forms.gle/wkSHDvH765ZMCay27"
+      "destination": "https://geekscononda.mercadoshops.com.ar/happy-droid"
     },
     {
       "source": "/comprar/coffeedev-npmi-tshirt",
-      "destination": "https://forms.gle/Jw4VEYjFhYR7NikQ7"
+      "destination": "https://geekscononda.mercadoshops.com.ar/remera-coleccion-coffeedev"
     },
     {
       "source": "/comprar/beerjscba-black",
-      "destination": "https://forms.gle/uvDNFau3vXjUtRVq5"
+      "destination": "https://geekscononda.mercadoshops.com.ar/beerjs"
     },
     {
       "source": "/comprar/beerjscba-yellow",
-      "destination": "https://forms.gle/1P6Q9Pus3baY1wcd7"
+      "destination": "https://geekscononda.mercadoshops.com.ar/beerjs"
     },
     {
       "source": "/comprar/coffeedev-calm-notebook",
-      "destination": "https://forms.gle/GQTEdyd5XwAdp49K7"
+      "destination": "https://geekscononda.mercadoshops.com.ar/cuaderno-a5-coffee-dev"
     },
     {
       "source": "/comprar/coffeedev-calm-mug",
-      "destination": "https://forms.gle/CrrEtaC6L1tLAEMn8"
+      "destination": "https://geekscononda.mercadoshops.com.ar/taza-coleccion-coffeedev"
     },
     {
       "source": "/comprar/coffeedev-party-notebook",
-      "destination": "https://forms.gle/1MzNtANxUgo4ogmU7"
+      "destination": "https://geekscononda.mercadoshops.com.ar/cuaderno-a5-coffee-dev"
     },
     {
       "source": "/comprar/coffeedev-party-mug",
-      "destination": "https://forms.gle/J9UnrXpnSLD2gAjv8"
+      "destination": "https://geekscononda.mercadoshops.com.ar/taza-coleccion-coffeedev"
     },
     {
       "source": "/comprar/stickers-hexa-5-18u",
@@ -61,6 +61,12 @@
     {
       "source": "/comprar/stickers-hexa-4-16u",
       "destination": "https://forms.gle/ruMJFUNrZbF8aeaa7"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/stickers",
+      "destination": "stickers.html"
     }
   ]
 }
