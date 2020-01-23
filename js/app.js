@@ -41,7 +41,7 @@ function trackPurchaseIntention() {
   buyButtons.forEach(function (/** @type HTMLAnchorElement */ buyButton) {
     buyButton.addEventListener("click", function () {
       event.preventDefault();
-      gtag("event", "begin_checkout", { event_value: buyButton.parentElement.querySelector(".price").innerHTML.substr(2) });
+      gtag("event", "begin_checkout");
       window.location = buyButton.href;
     });
   });
