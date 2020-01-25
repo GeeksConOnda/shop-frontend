@@ -47,7 +47,35 @@ function trackPurchaseIntention() {
   });
 }
 
+function getOrder(event) {
+  event.preventDefault();
+
+  var orderResults = document.querySelector("#order-data");
+  orderResults.style.display = "block";
+  var id = document.querySelector("#order-id").value;
+  orderResults.innerHTML = "<h1>Buscando...</h1>";
+  fetch("/api/orders?id=GCO" + id, {
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }).then(function (res) {
+    return res.json();
+  }).then(function (json) {
+    if (!json.id) {
+      orderResults.innerHTML = "<h1>No encontramos<br>este número de pedido.</h1><p>Si has realizado esta compra hoy mismo, intentá nuevamente en 24 horas.</p>";
+      return;
+    }
+
+    var html = "<h1>Orden #" + json.id.substr(3) + "</h1>";
+    html += "<h2>Fecha de compra</h2><label>" + json.date + "</label>";
+    html += "<h2>Forma de envío</h2><label>" + json.shippingMethod + "</label>";
+    html += "<h2>Estado</h2><label>" + json.status + "</label>";
+    orderResults.innerHTML = html;
+  });
+}
+
 window.addEventListener("hashchange", showProducts);
+document.querySelector("#order-form").addEventListener("submit", getOrder);
 
 showProducts({ newURL: window.location.href });
 trackPurchaseIntention();

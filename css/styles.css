@@ -54,8 +54,8 @@ nav a {
   text-align: center;
   text-decoration: none;
   color: var(--color-primary);
-  font-weight: 100;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 1rem;
   border: 1px solid var(--color-text);
 }
 
@@ -79,6 +79,20 @@ p.notice, p.notice span {
   text-align: center;
   color: var(--color-primary-light);
   font-weight: 700;
+}
+
+p.notice-b {
+  background: var(--color-primary);
+  color: var(--color-text);
+  padding: 1rem;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+p.notice-b a {
+  color: var(--color-accent-light);
 }
 
 p.notice span { 
@@ -133,7 +147,7 @@ section[data-category] h1 {
   text-align: center;
 }
 
-.buy {
+.buy, .search {
   background: var(--color-secondary);
   display: block;
   padding: 1rem 2rem;
@@ -146,9 +160,10 @@ section[data-category] h1 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;  
+  border: none;
 }
 
-.buy:hover {
+.buy:hover, .search:hover {
   outline-width: 2px;
   outline-offset: -5px;
   outline-color: var(--color-text);
@@ -198,6 +213,42 @@ section[data-category='stickers'] h2 span {
   color: var(--color-gray);
 }
 
+#order-form {
+  margin-bottom: 2rem;
+}
+
+#order-id {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+#order-id::placeholder {
+  letter-spacing: -2px;
+  font-weight: 100;
+}
+
+#order-data {
+  text-align: center;
+  border: 2px solid var(--color-accent);
+  border-radius: 4px;
+  padding-bottom: 1rem;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  display: none;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#order-data h1 {
+  border: none;
+  background: var(--color-accent);
+  color: var(--color-text);
+  margin: 0;
+}
+
 @media screen and (max-width: 768px) {
   main {
     padding-left: 3rem;
@@ -231,5 +282,9 @@ section[data-category='stickers'] h2 span {
   footer {
     position: fixed;
     bottom: 0;
+  }
+
+  #order-id {
+    max-width: 100%;
   }
 }
