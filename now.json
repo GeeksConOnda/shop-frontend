@@ -93,6 +93,10 @@
     {
       "source": "/comprar/stickers-hexa-4-16u",
       "destination": "https://forms.gle/ruMJFUNrZbF8aeaa7"
+    },
+    {
+      "source": "/pedidos/:id",
+      "destination": "/#tu-pedido/:id"
     }
   ],
   "rewrites": [

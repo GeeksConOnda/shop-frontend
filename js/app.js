@@ -17,6 +17,18 @@ function showProducts(/** @type HashChangeEvent|string */ eventOrCategory) {
       catalog.style.display = 'block';
       catalog.querySelector("header").style.display = "block";
     });
+  } else if (newCategory.includes("tu-pedido")) {
+    console.log(newCategory);
+    catalogs.forEach(function (/** @type HTMLElement */ catalog) {
+      catalog.style.display = 'none';
+      catalog.querySelector("header").style.display = "none";
+    });
+    document.querySelector("[data-category='tu-pedido']").style.display = "block";
+    var orderId = newCategory.split("/")[1];
+    if (orderId) {
+      document.querySelector("#order-id").value = orderId;
+      document.querySelector("#get-order").click();
+    }
   } else {
     catalogs.forEach(function (/** @type HTMLElement */ catalog) {
       catalog.style.display = catalog.dataset['category'] === newCategory ? 'block' : 'none';
