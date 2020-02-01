@@ -80,8 +80,8 @@ function getOrder(event) {
 
     var html = "<h1>Orden #" + json.id.substr(3) + "</h1>";
     html += "<h2>Fecha de compra</h2><label>" + json.date + "</label>";
-    html += "<h2>Forma de envío</h2><label>" + json.shippingMethod + "</label>";
     html += "<h2>Estado</h2><label>" + json.status + "</label>";
+    html += "<h2>Código de seguimiento</h2><label>" + json.trackingCode + "</label>";
     orderResults.innerHTML = html;
   });
 }

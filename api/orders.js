@@ -21,7 +21,7 @@ module.exports = (req, res) => {
                     id: order[0],
                     date: `${day}/${month}/${year}`,
                     status: order[4],
-                    shippingMethod: order[5]
+                    trackingCode: order[5]
                 });
             } catch (e) {
                 res.json({
