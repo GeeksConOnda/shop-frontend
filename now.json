@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "name": "geekscononda",
+  "redirects": [
+    {
+      "source": "/comprar/stickers-hexa-5-18u",
+      "destination": "https://forms.gle/3SkruTS36qMQPusk8"
+    },
+    {
+      "source": "/comprar/stickers-hexa-4-16u",
+      "destination": "https://forms.gle/ruMJFUNrZbF8aeaa7"
+    },
+    {
+      "source": "/pedidos/:id",
+      "destination": "/#tu-pedido/:id"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/stickers",
+      "destination": "stickers.html"
+    }
+  ]
+}
