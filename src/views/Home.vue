@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <search-box v-model="search" />
+    <product-list v-bind:search="search" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import { ProductList, SearchBox } from "@/components/products";
 
 export default {
   name: "Home",
+  data() {
+    return {
+      search: ""
+    };
+  },
+  mounted() {
+    this.$store.dispatch("productStore/filterDesigns");
+  },
   components: {
-    HelloWorld
+    ProductList,
+    SearchBox
   }
 };
 </script>

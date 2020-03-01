@@ -1,32 +1,71 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <main id="app">
+    <section id="view">
+      <nav-bar />
+      <router-view />
+    </section>
+    <legal-notice />
+    <page-footer />
+  </main>
 </template>
 
+<style lang="css" src="../node_modules/@codear/lilac/dist/lilac.css"></style>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-#nav {
-  padding: 30px;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+body:before {
+  content: " ";
+  width: 100%;
+  height: 7px;
+  display: block;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+  position: absolute;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#view {
+  padding: $desktop-padding;
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  #view {
+    padding: (2 * $mobile-padding) $mobile-padding;
   }
 }
 </style>
+
+<script>
+import { NavBar, PageFooter, LegalNotice } from "@/components/layout";
+import store from "@/store";
+
+export default {
+  name: "App",
+  components: {
+    NavBar,
+    PageFooter,
+    LegalNotice
+  },
+  store
+};
+</script>

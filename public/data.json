@@ -1,0 +1,184 @@
+{
+  "products": [
+    {
+      "id": "STICKERS-HEXA5-PACK18",
+      "name": "Pack de stickers Hexa 5cm x 18un.",
+      "description": "",
+      "type": "stickers",
+      "price": 250
+    },
+    {
+      "id": "STICKERS-HEXA4-PACK16",
+      "name": "Pack de stickers Hexa 4cm x 16un.",
+      "description": "",
+      "type": "stickers",
+      "price": 200
+    }
+  ],
+  "designs": {
+    "stickers": [
+      {
+        "id": "0004",
+        "name": "Coffee First",
+        "variations": ["base", "flat"],
+        "tags": ["gco-originals", "coffee", "brown"]
+      },
+      {
+        "id": "0005",
+        "name": "Might React Explosively",
+        "variations": ["base", "flat"],
+        "tags": ["gco-originals", "frameworks", "javascript", "react", "blue", "frontend"]
+      },
+      {
+        "id": "0006",
+        "name": "A Better Point of Vue",
+        "variations": ["base", "flat"],
+        "tags": ["gco-originals", "frameworks", "javascript", "vue", "green", "frontend"]
+      },
+      {
+        "id": "0007",
+        "name": "Forget Vibranium, My Shield Is Angular",
+        "variations": ["base", "flat"],
+        "tags": ["gco-originals", "frameworks", "javascript", "angular", "red", "frontend"]
+      },
+      {
+        "id": "0008",
+        "name": "Made Out Of Embers",
+        "variations": ["base", "flat"],
+        "tags": ["gco-originals", "frameworks", "javascript", "ember", "yellow", "frontend"]
+      },
+      {
+        "id": "0009",
+        "name": "Happy Droid",
+        "variations": ["base", "flat"],
+        "tags": ["gco-originals", "android", "green"]
+      },
+      {
+        "id": "0010",
+        "name": "JavaScript",
+        "variations": ["base", "flat"],
+        "tags": ["javascript", "languages", "yellow", "frontend", "backend"]
+      },
+      {
+        "id": "0011",
+        "name": "TypeScript",
+        "variations": ["base", "flat"],
+        "tags": ["typescript", "languages", "blue", "frontend", "backend"]
+      },
+      {
+        "id": "0012",
+        "name": "Git",
+        "variations": ["base", "flat"],
+        "tags": ["tools", "orange"]
+      },
+      {
+        "id": "0013",
+        "name": "HTML5",
+        "variations": ["base", "flat"],
+        "tags": ["html", "languages", "orange", "yellow", "frontend"]
+      },
+      {
+        "id": "0014",
+        "name": "CSS3",
+        "variations": ["base", "flat"],
+        "tags": ["css", "languages", "blue", "frontend"]
+      },
+      {
+        "id": "0015",
+        "name": "Console",
+        "variations": ["base", "flat"],
+        "tags": ["tools", "terminal", "console", "black", "gco-originals"]
+      },
+      {
+        "id": "0016",
+        "name": "React",
+        "variations": ["base", "flat"],
+        "tags": ["frameworks", "javascript", "react", "blue", "frontend"]
+      },
+      {
+        "id": "0017",
+        "name": "Vue Converge",
+        "variations": ["base", "flat"],
+        "tags": ["frameworks", "javascript", "vue", "green", "gco-originals", "frontend"]
+      },
+      {
+        "id": "0018",
+        "name": "Aurelia",
+        "variations": ["base", "flat"],
+        "tags": ["frameworks", "javascript", "aurelia", "purple", "frontend"]
+      },
+      {
+        "id": "0019",
+        "name": "Angular",
+        "variations": ["base", "flat"],
+        "tags": ["frameworks", "javascript", "angular", "red", "frontend"]
+      },
+      {
+        "id": "0020",
+        "name": "Ember",
+        "variations": ["base", "flat"],
+        "tags": ["frameworks", "javascript", "ember", "orange", "frontend"]
+      },
+      {
+        "id": "0021",
+        "name": "Svelte",
+        "variations": ["base", "flat"],
+        "tags": ["frameworks", "javascript", "svelte", "orange", "blue", "frontend"]
+      },
+      {
+        "id": "0022",
+        "name": "Babel",
+        "variations": ["base", "flat"],
+        "tags": ["tools", "javascript", "babel", "pink", "yellow"]
+      },
+      {
+        "id": "0023",
+        "name": "Polymer",
+        "variations": ["base", "flat"],
+        "tags": ["frameworks", "javascript", "web components", "pink", "blue", "frontend"]
+      },
+      {
+        "id": "0024",
+        "name": "Projext",
+        "variations": ["base", "flat"],
+        "tags": ["tools", "javascript", "projext", "black", "green"]
+      },
+      {
+        "id": "0025",
+        "name": "FrontEndCafe",
+        "variations": ["base", "flat", "black"],
+        "tags": ["communities", "black", "teal"]
+      },
+      {
+        "id": "0029",
+        "name": "Vue",
+        "variations": ["base", "flat"],
+        "tags": ["frameworks", "javascript", "vue", "black", "teal", "blue", "frontend"]
+      },
+      {
+        "id": "0030",
+        "name": "Ruby",
+        "variations": ["base", "flat"],
+        "tags": ["languages", "ruby", "red", "backend"]
+      },
+      {
+        "id": "0031",
+        "name": "PHP Classic",
+        "variations": ["base", "flat"],
+        "tags": ["languages", "php", "backend", "blue", "pink"]
+      },
+      {
+        "id": "0044",
+        "name": "Python",
+        "variations": ["base", "flat"],
+        "tags": ["languages", "python", "backend", "blue", "yellow"]
+      },
+      {
+        "id": "0045",
+        "name": "Beer.js Córdoba",
+        "variations": ["black-single", "black-dual", "yellow-single", "yellow-dual"],
+        "tags": ["communities", "beerjscba", "beerjs", "black", "yellow"]
+      }
+    ]
+  }
+}
