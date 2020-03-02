@@ -18,7 +18,35 @@
   "rewrites": [
     {
       "source": "/stickers",
-      "destination": "stickers.html"
+      "destination": "/listings/stickers.html"
+    },
+    {
+      "source": "/remeras",
+      "destination": "/listings/t-shirts.html"
+    },
+    {
+      "source": "/buzos",
+      "destination": "/listings/hoodies.html"
+    },
+    {
+      "source": "/postales",
+      "destination": "/listings/postcards.html"
+    },
+    {
+      "source": "/cuadros",
+      "destination": "/listings/posters.html"
+    },
+    {
+      "source": "/zapatillas",
+      "destination": "/listings/sneakers.html"
+    },
+    {
+      "source": "/bolsas-de-tela",
+      "destination": "/listings/tote-bags.html"
+    },
+    {
+      "source": "/almohadones",
+      "destination": "/listings/pillows.html"
     }
   ]
 }
