@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const https = require("https");
 const designs = require(path.resolve(__dirname, "../api/data/designs.json"));
 const pageTemplate = fs.readFileSync(path.resolve(__dirname, "../templates/page.html"));
 const productTemplate = fs.readFileSync(path.resolve(__dirname, "../templates/product-box.html"));
@@ -77,12 +78,17 @@ listingOutputFiles.forEach(({ file, types, category, iWantThis }) => {
                 return;
             }
 
+            const imageFileName = design.products[productType].images[0].split("/").pop();
+            const imageStream = fs.createWriteStream(path.resolve(__dirname, `../images/products/fc/${imageFileName}`));
+            const download = https.get(design.products[productType].images[0]);
+            download.on("data", data => imageStream.write(data));
+            download.on("close", () => imageStream.close());
             products.push(`${productTemplate}`
                 .replace(/<%ID%>/g, design.id)
                 .replace(/<%NAME%>/g, design.title)
                 .replace(/<%BASE_COLOR%>/g, design.canRestrictColors ? design.baseColor : design.products[productType].colors[0])
                 .replace(/<%DESCRIPTION%>/g, design.description)
-                .replace(/<%IMAGE_URL%>/g, design.products[productType].images[0])
+                .replace(/<%IMAGE_URL%>/g, `/images/products/fc/${imageFileName}`)
                 .replace(/<%PRICE%>/g, design.products[productType].price)
                 .replace(/<%COLORS%>/g, design.products[productType].colors.map(color => `<li style="background-color: ${color}">&nbsp;</li>`).join(""))
                 .replace(/<%PRODUCT_URL%>/g, design.products[productType].href)
