@@ -19,6 +19,10 @@
     {
       "source": "/stickers",
       "destination": "stickers.html"
+    },
+    {
+      "source": "/stickers-gratis",
+      "destination": "https://drive.google.com/a/codear.org/file/d/1yB3q8HSZUHCjlLPodIo9tJ8Vu1hbRkmp/view?usp=sharing"
     }
   ]
 }
