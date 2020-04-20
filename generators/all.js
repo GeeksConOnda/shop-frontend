@@ -21,7 +21,8 @@ const titles = {
     "postcard": "Postales",
     "sneakers-male": "Zapatillas de talle grande",
     "sneakers-female": "Zapatillas de talle pequeño",
-    "pillow": "Almohadones"
+    "pillow": "Almohadones",
+    "stickers": "Stickers"
 };
 
 const listingOutputFiles = [
@@ -29,43 +30,49 @@ const listingOutputFiles = [
         file: "t-shirts.html",
         types: ["t-shirt-male", "t-shirt-male-v-neck", "t-shirt-female", "t-shirt-kids", "t-shirt-baby"],
         category: "Remeras",
-        iWantThis: "Quiero esta remera"
+        iWantThis: "Comprar en FlashCookie"
     },
     {
         file: "hoodies.html",
         types: ["hoodie", "hoodie-zip"],
         category: "Buzos",
-        iWantThis: "Quiero este buzo"
+        iWantThis: "Comprar en FlashCookie"
     },
     {
         file: "tote-bags.html",
         types: ["bag"],
         category: "Bolsas de tela",
-        iWantThis: "Quiero esta bolsa"
+        iWantThis: "Comprar en FlashCookie"
     },
     {
         file: "posters.html",
         types: ["poster"],
         category: "Cuadros",
-        iWantThis: "Quiero este cuadro"
+        iWantThis: "Comprar en FlashCookie"
     },
     {
         file: "postcards.html",
         types: ["postcard"],
         category: "Postales",
-        iWantThis: "Quiero esta postal"
+        iWantThis: "Comprar en FlashCookie"
     },
     {
         file: "sneakers.html",
         types: ["sneakers-male", "sneakers-female"],
         category: "Zapatillas",
-        iWantThis: "Quiero estas zapatillas"
+        iWantThis: "Comprar en FlashCookie"
     },
     {
         file: "pillows.html",
         types: ["pillow"],
         category: "Almohadones",
-        iWantThis: "Quiero este almohadón"
+        iWantThis: "Comprar en FlashCookie"
+    },
+    {
+        file: "stickers.html",
+        types: ["stickers", "metal-stickers"],
+        category: "Stickers",
+        iWantThis: "Quiero estos stickers"
     }
 ];
     
@@ -77,12 +84,10 @@ listingOutputFiles.forEach(({ file, types, category, iWantThis }) => {
             if (!design.products[productType]) {
                 return;
             }
-
+            
             const imageFileName = design.products[productType].images[0].split("/").pop();
             const imageStream = fs.createWriteStream(path.resolve(__dirname, `../images/products/fc/${imageFileName}`));
-            const download = https.get(design.products[productType].images[0]);
-            download.on("data", data => imageStream.write(data));
-            download.on("close", () => imageStream.close());
+            const download = https.get(design.products[productType].images[0], (response) => response.pipe(imageStream));
             products.push(`${productTemplate}`
                 .replace(/<%ID%>/g, design.id)
                 .replace(/<%NAME%>/g, design.title)
