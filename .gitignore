@@ -24,3 +24,9 @@ yarn-error.log*
 *.sw?
 
 .now
+
+# Product images
+/images/products/fc/
+
+# Product listings
+/listings/
