@@ -21,32 +21,92 @@
       "destination": "/listings/stickers.html"
     },
     {
+      "source": "/stickers/mate/(.*)",
+      "destination": "/listings/stickers/$1.html"
+    },
+    {
+      "source": "/stickers/metalizados/(.*)",
+      "destination": "/listings/metal-stickers/$1.html"
+    },
+    {
       "source": "/remeras",
       "destination": "/listings/t-shirts.html"
+    },
+    {
+      "source": "/remeras/corte-recto/(.*)",
+      "destination": "/listings/t-shirt-male/$1.html"
+    },
+    {
+      "source": "/remeras/corte-recto-cuello-v/(.*)",
+      "destination": "/listings/t-shirt-male-v-neck/$1.html"
+    },
+    {
+      "source": "/remeras/corte-entallado/(.*)",
+      "destination": "/listings/t-shirt-female/$1.html"
+    },
+    {
+      "source": "/remeras/para-chicas-y-chicos/(.*)",
+      "destination": "/listings/t-shirt-kids/$1.html"
+    },
+    {
+      "source": "/remeras/para-bebes/(.*)",
+      "destination": "/listings/t-shirt-baby/$1.html"
     },
     {
       "source": "/buzos",
       "destination": "/listings/hoodies.html"
     },
     {
+      "source": "/buzos/canguro/(.*)",
+      "destination": "/listings/hoodie/$1.html"
+    },
+    {
+      "source": "/buzos/con-cierre/(.*)",
+      "destination": "/listings/hoodie-zip/$1.html"
+    },
+    {
       "source": "/postales",
       "destination": "/listings/postcards.html"
+    },
+    {
+      "source": "/postales/(.*)",
+      "destination": "/listings/postcard/$1.html"
     },
     {
       "source": "/cuadros",
       "destination": "/listings/posters.html"
     },
     {
+      "source": "/cuadros/(.*)",
+      "destination": "/listings/poster/$1.html"
+    },
+    {
       "source": "/zapatillas",
       "destination": "/listings/sneakers.html"
+    },
+    {
+      "source": "/zapatillas/talle-grande/(.*)",
+      "destination": "/listings/sneakers-male/$1.html"
+    },
+    {
+      "source": "/zapatillas/talle-chico/(.*)",
+      "destination": "/listings/sneakers-female/$1.html"
     },
     {
       "source": "/bolsas-de-tela",
       "destination": "/listings/tote-bags.html"
     },
     {
+      "source": "/bolsas-de-tela/(.*)",
+      "destination": "/listings/bag/$1.html"
+    },
+    {
       "source": "/almohadones",
       "destination": "/listings/pillows.html"
+    },
+    {
+      "source": "/almohadones/(.*)",
+      "destination": "/listings/pillow/$1.html"
     }
   ]
 }

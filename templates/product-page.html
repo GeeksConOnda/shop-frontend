@@ -1,10 +1,10 @@
 <html>
 
 <head>
-    <title><%PRODUCT_TYPE%> en Geeks con Onda | La tienda de merchandising de CoDeAr</title>
+    <title><%PRODUCT_TYPE%> de <%NAME%> en Geeks con Onda | La tienda de merchandising de CoDeAr</title>
     <meta charset="utf-8">
     <meta name="description"
-        content="Diseñamos remeras, buzos, stickers, almohadones, cuadros, postales y todas esas cositas geek que te hacen feliz">
+        content="<%DESCRIPTION%>. ¡Comprá <%PRODUCT_TYPE%> de <%NAME%> ahora!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -24,44 +24,70 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#A70055">
 
-    <meta property="og:title" content="<%PRODUCT_TYPE%> en Geeks con Onda | La tienda de merchandising de CoDeAr" />
-    <meta property="og:site_name" content="<%PRODUCT_TYPE%> en Geeks con Onda | La tienda de merchandising de CoDeAr" />
+    <meta property="og:title" content="<%PRODUCT_TYPE%> de <%NAME%> en Geeks con Onda | La tienda de merchandising de CoDeAr" />
+    <meta property="og:site_name" content="<%PRODUCT_TYPE%> de <%NAME%> en Geeks con Onda | La tienda de merchandising de CoDeAr" />
     <meta property="og:description"
-        content="Diseñamos remeras, buzos, stickers, almohadones, cuadros, postales y todas esas cositas geek que te hacen feliz." />
-    <meta property="og:url" content="https://geekscononda.com" />
+        content="<%DESCRIPTION%>. ¡Comprá <%PRODUCT_TYPE%> de <%NAME%> ahora!" />
+    <meta property="og:url" content="<%PRODUCT_LISTING_URL%>" />
     <meta property="og:locale" content="es_AR" />
     <meta property="og:image" content="https://geekscononda.com/apple-icon-180x180.png" />
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="<%PRODUCT_TYPE%> en Geeks con Onda | La tienda de merchandising de CoDeAr" />
     <meta name="twitter:description"
-        content="Diseñamos remeras, buzos, stickers, almohadones, cuadros, postales y todas esas cositas geek que te hacen feliz" />
+        content="<%DESCRIPTION%>. ¡Comprá <%PRODUCT_TYPE%> de <%NAME%> ahora!" />
     <meta name="twitter:site" content="@GeeksConOnda" />
     <meta name="twitter:creator" content="@GeeksConOnda" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Source+Sans+Pro:400,700&display=swap">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
     <header>
-        <a href="/"><img class="logo logo--gco" src="images/logo.svg" alt="Logo de Geeks con Onda"></a>
+        <a href="/"><img class="logo logo--gco" src="/images/logo.svg" alt="Logo de Geeks con Onda"></a>
         <nav>
             <ul>
-              <li><a href="/remeras">Remeras</a></li>
-              <li><a href="/buzos">Buzos</a></li>
-              <li><a href="/zapatillas">Zapatillas</a></li>
-              <li><a href="/almohadones">Almohadones</a></li>
-              <li><a href="/bolsas-de-tela">Bolsas de tela</a></li>
-              <li><a href="/cuadros">Cuadros</a></li>
-              <li><a href="/postales">Postales</a></li>
-              <li><a href="/stickers">Stickers</a></li>
+              <li><a %ACTIVE_T-SHIRTS% href="/remeras">Remeras</a></li>
+              <li><a %ACTIVE_HOODIES% href="/buzos">Buzos</a></li>
+              <li><a %ACTIVE_SNEAKERS% href="/zapatillas">Zapatillas</a></li>
+              <li><a %ACTIVE_PILLOWS% href="/almohadones">Almohadones</a></li>
+              <li><a %ACTIVE_TOTE-BAGS% href="/bolsas-de-tela">Bolsas de tela</a></li>
+              <li><a %ACTIVE_POSTERS% href="/cuadros">Cuadros</a></li>
+              <li><a %ACTIVE_POSTCARDS% href="/postales">Postales</a></li>
+              <li><a %ACTIVE_STICKERS% href="/stickers">Stickers</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="products" itemscope itemtype="https://schema.org/ItemList">
-            <%CONTENT%>
+    <main class="product__page-container" itemscope itemtype="https://schema.org/Product">
+      <article class="product product__page">
+        <h1 itemprop="name" class="product__type"><%NAME%></h1>
+        <ul class="product__colors" itemprop="color" content="<%COLORS_TEXT%>">
+          <%COLORS%>
+        </ul>
+        <section class="product__image-container" data-base-color="<%BASE_COLOR%>" style="background-color: <%BASE_COLOR%>; border-color: <%BASE_COLOR%>">
+          <img itemprop="image" src="<%IMAGE_URL%>" class="product__image">
         </section>
+        <span itemprop="url" content="<%URL%>"></span>
+        <span itemprop="brand" content="GCO"></span>
+        <span itemprop="sku" content="<%ID%>"></span>
+        <span itemprop="category" content="<%PRODUCT_TYPE%>"></span>
+        <span itemprop="gtin8" content="00000000"></span>
+      </article>
+      <aside class="product__data">
+        <p itemprop="description" class="product__description"><%DESCRIPTION%></p>
+        <p><strong>Colores:</strong> <%COLORS_TEXT%></p>
+        <h2>Acerca de este producto</h2>
+        <%PRODUCT_TYPE_INFO%>
+        <div class="product__price-container" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          <span class="product__currency" itemprop="priceCurrency" content="ARS">$</span>
+          <span class="product__price" itemprop="price"><%PRICE%></span>
+          <link itemprop="availability" href="https://schema.org/InStock" />
+          <span itemprop="priceValidUntil" content="<%PRICE_EXPIRATION%>"></span>
+          <span itemprop="url" content="<%URL%>"></span>
+        </div>
+        <a class="buy" href="<%PRODUCT_URL%>" itemprop="url" target="_blank" rel="noopener">Comprar en FlashCookie</a>
+        <%DONATION_BOX%>
+      </aside>
     </main>
     <footer>
         <section class="legal-notice">
@@ -84,7 +110,7 @@
         </section>
 
         <section class="copyright">
-            Hecho con <3 por <img src="images/codear.svg" class="logo logo--codear">
+            Hecho con <3 por <img src="/images/codear.svg" class="logo logo--codear">
         </section>
     </footer>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148017514-3"></script>
@@ -110,7 +136,7 @@
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1159269554418075&ev=PageView&noscript=1"
     /></noscript>
-    <script src="js/app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>

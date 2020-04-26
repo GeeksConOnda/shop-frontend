@@ -1,7 +1,6 @@
 {
   "name": "@codear/geeks-con-onda",
-  "private": true,
   "scripts": {
-    "build": "node generators/all.js"
+    "build": "node generators/all"
   }
 }

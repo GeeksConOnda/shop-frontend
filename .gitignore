@@ -29,4 +29,4 @@ yarn-error.log*
 /images/products/fc/
 
 # Product listings
-/listings/
+/listings/**/*.html

@@ -1,21 +1,25 @@
-<article class="product" itemscope itemtype="https://schema.org/Product">
-    <h3 itemprop="name" class="product__name"><%NAME%></h2>
+<article class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <span itemprop="position" content="<%INDEX%>"></span>
+  <div itemprop="item" itemscope itemtype="https://schema.org/Product">
+    <h3 itemprop="name" class="product__name"><a href="<%PRODUCT_PAGE%>"><%NAME%></a></h3>
     <ul class="product__colors" itemprop="color" content="<%COLORS_TEXT%>">
-        <%COLORS%>
+      <%COLORS%>
     </ul>
     <section class="product__image-container" data-base-color="<%BASE_COLOR%>" style="background-color: <%BASE_COLOR%>; border-color: <%BASE_COLOR%>">
-        <img itemprop="image" src="<%IMAGE_URL%>" class="product__image">
+      <a href="<%PRODUCT_PAGE%>"><img itemprop="image" src="<%IMAGE_URL%>" class="product__image"></a>
     </section>
     <p itemprop="description" class="product__description"><%DESCRIPTION%></p>
     <div class="product__price-container" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        <span class="product__currency" itemprop="priceCurrency" content="ARS">$</span>
-        <span class="product__price" itemprop="price"><%PRICE%></span>
-        <link itemprop="availability" href="http://schema.org/InStock" />
-        <span itemprop="priceValidUntil" content="<%PRICE_EXPIRATION%>"></span>
-        <a class="buy" href="<%PRODUCT_URL%>" itemprop="url" target="_blank" rel="noopener"><%I_WANT_THIS%></a>
+      <span class="product__currency" itemprop="priceCurrency" content="ARS">$</span>
+      <span class="product__price" itemprop="price"><%PRICE%></span>
+      <link itemprop="availability" href="https://schema.org/InStock" />
+      <span itemprop="priceValidUntil" content="<%PRICE_EXPIRATION%>"></span>
+      <span itemprop="url" content="<%URL%>"></span>
     </div>
+    <span itemprop="url" content="<%URL%>"></span>
     <span itemprop="brand" content="GCO"></span>
     <span itemprop="sku" content="<%ID%>"></span>
     <span itemprop="category" content="<%PRODUCT_TYPE%>"></span>
     <span itemprop="gtin8" content="00000000"></span>
+  </div>
 </article>

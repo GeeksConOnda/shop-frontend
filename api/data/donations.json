@@ -1,0 +1,13 @@
+{
+  "vuecba": {
+    "benefactor": {
+      "name": "Vue Córdoba",
+      "href": "https://vuecba.com"
+    },
+    "distributions": {
+      "gco": 10,
+      "benefactor": 85,
+      "taxes": 5
+    }
+  }
+}
