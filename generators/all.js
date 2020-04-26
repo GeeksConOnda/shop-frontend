@@ -192,6 +192,7 @@ listingOutputFiles.forEach(({ file, types, category, iWantThis }) => {
             .replace(/<%PRICE_EXPIRATION%>/g, "2020-12-31")
             .replace(/<%PRODUCT_TYPE%>/g, titles[productType])
             .replace(/<%I_WANT_THIS%>/g, iWantThis)
+            .replace(/<%PRODUCT_LISTING_URL%>/g, `https://geekscononda.com${paths[productType]}/${design.id}`)
             .replace(/<%PRODUCT_TYPE_INFO%>/g, `${productTypeInfoTemplates[productType]}`)
 
             listingOutputFiles.forEach(listing => {
