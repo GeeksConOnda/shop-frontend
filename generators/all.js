@@ -155,9 +155,9 @@ listingOutputFiles.forEach(({ file, types, category, iWantThis }) => {
             console.log("Generating: ", category, " > ", design.title);
             const productTypePath = path.resolve(__dirname, "../listings/", productType);
             const imageFileName = design.products[productType].images[0].split("/").pop();
-            //const imageStream = fs.createWriteStream(path.resolve(__dirname, `../images/products/fc/${imageFileName}`));
-            //console.log("-- Downloading: ", design.products[productType].images[0]);
-            //const download = https.get(design.products[productType].images[0], (response) => response.pipe(imageStream));
+            const imageStream = fs.createWriteStream(path.resolve(__dirname, `../images/products/fc/${imageFileName}`));
+            console.log("-- Downloading: ", design.products[productType].images[0]);
+            const download = https.get(design.products[productType].images[0], (response) => response.pipe(imageStream));
             products.push(`${productTemplate}`
                 .replace(/<%ID%>/g, design.id)
                 .replace(/<%INDEX%>/g, count)
