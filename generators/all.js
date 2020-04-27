@@ -169,7 +169,7 @@ listingOutputFiles.forEach(({ file, types, category, iWantThis }) => {
                 .replace(/<%COLORS%>/g, design.products[productType].colors.map(color => `<li style="background-color: ${color}">&nbsp;</li>`).join(""))
                 .replace(/<%COLORS_TEXT%>/g, design.products[productType].colors.map(color => colorNames[color]).join(", "))
                 .replace(/<%PRODUCT_URL%>/g, design.products[productType].href)
-                .replace(/<%PRODUCT_PAGE%>/g, `${paths[productType]}/${design.title.toLowerCase().replace(/ /g, "-")}`)
+                .replace(/<%PRODUCT_PAGE%>/g, `${paths[productType]}/${design.id}`)
                 .replace(/<%LIST_URL%>/g, `https://geekscononda.com/${path.basename(file, ".html")}`)
                 .replace(/<%URL%>/g, design.products[productType].href)
                 .replace(/<%PRICE_EXPIRATION%>/g, "2020-12-31")
@@ -213,7 +213,7 @@ listingOutputFiles.forEach(({ file, types, category, iWantThis }) => {
               productPage = productPage.replace(/<%DONATION_BOX%>/g, "");
             }
 
-            fs.writeFileSync(path.resolve(productTypePath, `${design.title.toLowerCase().replace(/ /g, "-")}.html`), productPage);
+            fs.writeFileSync(path.resolve(productTypePath, `${design.id}.html`), productPage);
 
             count += 1;
         });
