@@ -193,7 +193,7 @@ section.copyright {
   flex-direction: row;
   justify-content: space-around;
   margin: 0 auto;
-  width: 90rem;
+  width: 80rem;
 }
 
 .product__data {
@@ -394,5 +394,11 @@ nav .active {
 
   .gco-ratio label, .taxes-ratio label {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .product__page-container {
+    width: 90rem;
   }
 }
