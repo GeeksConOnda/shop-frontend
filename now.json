@@ -107,6 +107,14 @@
     {
       "source": "/almohadones/(.*)",
       "destination": "/listings/pillow/$1.html"
+    },
+    {
+      "source": "/camisas",
+      "destination": "/listings/shirts.html"
+    },
+    {
+      "source": "/camisas/(.*)",
+      "destination": "/listings/shirts/$1.html"
     }
   ]
 }
