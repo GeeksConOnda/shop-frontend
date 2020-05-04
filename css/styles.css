@@ -77,7 +77,7 @@ nav a {
   color: var(--color-primary);
   display: inline-block;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: background, color, transform 80ms ease-in-out;
   border-radius: 1rem;
   transform: translateY(0rem);
@@ -146,6 +146,12 @@ section.copyright {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.product-type__description {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.5rem;
 }
 
 .product__name {
@@ -232,6 +238,11 @@ section.copyright {
   margin-top: 2rem;
 }
 
+.products > .donation {
+  max-width: 90rem;
+  margin: 1rem auto;
+}
+
 .donation {
   background: #eee;
   padding: 2rem;
@@ -295,8 +306,8 @@ section.copyright {
 }
 
 .product__colors li {
-  width: 2rem;
-  height: 2rem;
+  width: 1.45rem;
+  height: 1.45rem;
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
   cursor: default;
@@ -311,8 +322,7 @@ section.copyright {
   text-align: center;
 }
 
-.buy {
-  background: var(--color-secondary);
+.buy, .go-to-collection {
   display: block;
   padding: 1rem 2rem;
   text-decoration: none;
@@ -328,7 +338,15 @@ section.copyright {
   font-size: 1rem;
 }
 
-.buy:hover {
+.buy {
+  background: var(--color-secondary);
+}
+
+.go-to-collection {
+  background: var(--color-primary);
+}
+
+.buy:hover, .go-to-collection:hover {
   outline-width: 2px;
   outline-offset: -5px;
   outline-color: var(--color-text);
@@ -338,6 +356,12 @@ section.copyright {
 nav .active {
   background: var(--color-primary-light);
   color: var(--color-text);
+}
+
+.afip-qr {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -394,6 +418,11 @@ nav .active {
 
   .gco-ratio label, .taxes-ratio label {
     display: none;
+  }
+
+  .product-type__description {
+    font-size: 1.15rem;
+    padding: 1rem 2rem;
   }
 }
 

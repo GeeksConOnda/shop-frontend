@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title><%COLLECTION_NAME%> en Geeks con Onda | La tienda de merchandising de CoDeAr</title>
+    <meta charset="utf-8">
+    <meta name="description"
+      content="Geeks con Onda te presenta la colección <%COLLECTION_NAME%>: <%PRODUCT_DESCRIPTION%>. Disponible en <%PRODUCT_TYPES%>.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#A70055">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#A70055">
+
+    <meta property="og:title" content="<%COLLECTION_NAME%> en Geeks con Onda | La tienda de merchandising de CoDeAr" />
+    <meta property="og:site_name" content="<%COLLECTION_NAME%> en Geeks con Onda | La tienda de merchandising de CoDeAr" />
+    <meta property="og:description"
+      content="Geeks con Onda te presenta la colección <%COLLECTION_NAME%>: <%PRODUCT_DESCRIPTION%>. Disponible en <%PRODUCT_TYPES%>.">
+    <meta property="og:image" content="https://geekscononda.com/apple-icon-180x180.png" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<%COLLECTION_NAME%> en Geeks con Onda | La tienda de merchandising de CoDeAr" />
+    <meta name="twitter:description"
+      content="Geeks con Onda te presenta la colección <%COLLECTION_NAME%>: <%PRODUCT_DESCRIPTION%>. Disponible en <%PRODUCT_TYPES%>.">
+    <meta name="twitter:site" content="@GeeksConOnda" />
+    <meta name="twitter:creator" content="@GeeksConOnda" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Source+Sans+Pro:400,700&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="/"><img class="logo logo--gco" src="/images/logo.svg" alt="Logo de Geeks con Onda"></a>
+        <%MENU%>
+    </header>
+    <main>
+        <section class="products" itemscope itemtype="https://schema.org/ItemList">
+          <h2 class="product__type"><%COLLECTION_NAME%></h2>
+          <div class="product-type__description"><%COLLECTION_DESCRIPTION%></div>
+          <%DONATION_BOX%>
+          <%CONTENT%>
+        </section>
+    </main>
+    <footer>
+        <section class="legal-notice">
+            <p>
+                <strong>Geeks con Onda</strong> es una iniciativa de la
+                <strong>Comunidad de Desarrolladores de Argentina</strong> (CoDeAr), una
+                asociación civil constituida con personería jurídica autorizada por la
+                Dirección General de Inspección de Personas Jurídicas de la Provincia de
+                Córdoba, bajo resolución Nro. 191 C/19, con fecha 11/10/2019, e inscrita
+                en AFIP bajo el CUIT 30-71664952-7.
+            </p>
+
+            <p>
+                <strong>
+                    Todos los fondos recaudados a través de este proyecto son destinados a
+                    la promoción y ejecución de actividades por parte de la Comunidad de
+                    Desarrolladores de Argentina.
+                </strong>
+            </p>
+            <p>
+              <a href="http://qr.afip.gob.ar/?qr=VU46t9SLCOsSqj6RBDg9Bg,," target="_F960AFIPInfo"><img
+                src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg" class="afip-qr" border="0"></a>
+            </p>
+
+        </section>
+
+        <section class="copyright">
+          Hecho con <3 por <a href="https://codear.org" target="_blank"><img src="/images/codear.svg" class="logo logo--codear"></a>
+        </section>
+      </footer>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148017514-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148017514-3');
+    </script>
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1159269554418075');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1159269554418075&ev=PageView&noscript=1"
+    /></noscript>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

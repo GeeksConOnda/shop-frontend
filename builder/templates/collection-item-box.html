@@ -1,0 +1,27 @@
+<article class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <span itemprop="position" content="<%INDEX%>"></span>
+  <div itemprop="item" itemscope itemtype="https://schema.org/Product">
+    <h3 class="product__name"><a href="<%PRODUCT_PAGE%>"><%PRODUCT_TYPE_SINGLE%></a></h3>
+    <ul class="product__colors" itemprop="color" content="<%COLORS_TEXT%>">
+      <%COLORS%>
+    </ul>
+    <section class="product__image-container" data-base-color="<%BASE_COLOR%>" style="background-color: <%BASE_COLOR%>; border-color: <%BASE_COLOR%>">
+      <a href="<%PRODUCT_PAGE%>"><img itemprop="image" src="<%IMAGE_URL%>" class="product__image"></a>
+    </section>
+    <p class="product__description"><%PRODUCT_TYPE_DESCRIPTION%></p>
+    <span itemprop="description" content="<%DESCRIPTION%> <%PRODUCT_TYPE_DESCRIPTION%>"></span>
+    <div class="product__price-container" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+      <span class="product__currency" itemprop="priceCurrency" content="ARS">$</span>
+      <span class="product__price" itemprop="price"><%PRICE%></span>
+      <link itemprop="availability" href="https://schema.org/InStock" />
+      <span itemprop="priceValidUntil" content="<%PRICE_EXPIRATION%>"></span>
+      <span itemprop="url" content="<%URL%>"></span>
+    </div>
+    <span itemprop="name" content="<%PRODUCT_TYPE_SINGLE%> <%PRODUCT_NAME%>"></span>
+    <span itemprop="url" content="<%URL%>"></span>
+    <span itemprop="brand" content="GCO"></span>
+    <span itemprop="sku" content="<%ID%>"></span>
+    <span itemprop="category" content="<%PRODUCT_GROUP%>"></span>
+    <span itemprop="gtin8" content="00000000"></span>
+  </div>
+</article>
