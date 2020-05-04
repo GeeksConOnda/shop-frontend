@@ -17,6 +17,14 @@
   ],
   "rewrites": [
     {
+      "source": "/colecciones",
+      "destination": "/listings/collections.html"
+    },
+    {
+      "source": "/coleccion/(.*)",
+      "destination": "/listings/collections/$1.html"
+    },
+    {
       "source": "/stickers",
       "destination": "/listings/stickers.html"
     },

@@ -1,0 +1,77 @@
+[
+  {
+    "file": "t-shirts.html",
+    "types": ["t-shirt-male", "t-shirt-male-v-neck", "t-shirt-female", "t-shirt-kids", "t-shirt-baby"],
+    "category": "Remeras",
+    "path": "/remeras",
+    "iWantThis": "Comprar en FlashCookie"
+  },
+  {
+    "file": "hoodies.html",
+    "types": ["hoodie", "hoodie-zip"],
+    "path": "/buzos",
+    "category": "Buzos",
+    "iWantThis": "Comprar en FlashCookie"
+  },
+  {
+    "file": "tote-bags.html",
+    "types": ["bag"],
+    "path": "/bolsas-de-tela",
+    "category": "Bolsas de tela",
+    "iWantThis": "Comprar en FlashCookie"
+  },
+  {
+    "file": "posters.html",
+    "types": ["poster"],
+    "path": "/cuadros",
+    "category": "Cuadros",
+    "iWantThis": "Comprar en FlashCookie"
+  },
+  {
+    "file": "postcards.html",
+    "types": ["postcard"],
+    "path": "/postales",
+    "category": "Postales",
+    "iWantThis": "Comprar en FlashCookie"
+  },
+  {
+    "file": "sneakers.html",
+    "types": ["sneakers-male", "sneakers-female"],
+    "path": "/zapatillas",
+    "category": "Zapatillas",
+    "iWantThis": "Comprar en FlashCookie"
+  },
+  {
+    "file": "pillows.html",
+    "types": ["pillow"],
+    "path": "/almohadones",
+    "category": "Almohadones",
+    "iWantThis": "Comprar en FlashCookie"
+  },
+  {
+    "file": "stickers.html",
+    "types": ["stickers", "metal-stickers"],
+    "path": "/stickers",
+    "category": "Stickers",
+    "iWantThis": "Comprar en FlashCookie"
+  },
+  {
+    "file": "shirts.html",
+    "types": ["shirts"],
+    "path": "/camisas",
+    "category": "Camisas",
+    "iWantThis": "Comprar en FlashCookie"
+  },
+  {
+    "file": "vue-cordoba.html",
+    "path": "/vue-cordoba",
+    "design": "vue-cordoba",
+    "iWantThis": "Comprar en FlashCookie"
+  },
+  {
+    "file": "frontendcafe.html",
+    "path": "/frontendcafe",
+    "design": "frontendcafe",
+    "iWantThis": "Comprar en FlashCookie"
+  }
+]

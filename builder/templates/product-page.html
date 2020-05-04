@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <title><%PRODUCT_TYPE%> de <%NAME%> en Geeks con Onda | La tienda de merchandising de CoDeAr</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="<%DESCRIPTION%>. ¡Comprá <%PRODUCT_TYPE%> de <%NAME%> ahora!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#A70055">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#A70055">
+
+    <meta property="og:title" content="<%PRODUCT_TYPE%> de <%NAME%> en Geeks con Onda | La tienda de merchandising de CoDeAr" />
+    <meta property="og:site_name" content="<%PRODUCT_TYPE%> de <%NAME%> en Geeks con Onda | La tienda de merchandising de CoDeAr" />
+    <meta property="og:description"
+        content="<%DESCRIPTION%>. ¡Comprá <%PRODUCT_TYPE%> de <%NAME%> ahora!" />
+    <meta property="og:url" content="<%PRODUCT_LISTING_URL%>" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:image" content="https://geekscononda.com/apple-icon-180x180.png" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<%PRODUCT_TYPE%> en Geeks con Onda | La tienda de merchandising de CoDeAr" />
+    <meta name="twitter:description"
+        content="<%DESCRIPTION%>. ¡Comprá <%PRODUCT_TYPE%> de <%NAME%> ahora!" />
+    <meta name="twitter:site" content="@GeeksConOnda" />
+    <meta name="twitter:creator" content="@GeeksConOnda" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Source+Sans+Pro:400,700&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="/"><img class="logo logo--gco" src="/images/logo.svg" alt="Logo de Geeks con Onda"></a>
+        <%MENU%>
+    </header>
+    <main class="product__page-container" itemscope itemtype="https://schema.org/Product">
+      <article class="product product__page">
+        <h1 class="product__type"><%PRODUCT_TYPE_SINGLE%><br><strong><%NAME%></strong></h1>
+        <span itemprop="name" content="<%PRODUCT_TYPE_SINGLE%> <%NAME%>"></span>
+        <ul class="product__colors" itemprop="color" content="<%COLORS_TEXT%>">
+          <%COLORS%>
+        </ul>
+        <section class="product__image-container" data-base-color="<%BASE_COLOR%>" style="background-color: <%BASE_COLOR%>; border-color: <%BASE_COLOR%>">
+          <img itemprop="image" src="<%IMAGE_URL%>" class="product__image">
+        </section>
+        <span itemprop="url" content="<%URL%>"></span>
+        <span itemprop="brand" content="GCO"></span>
+        <span itemprop="sku" content="<%ID%>"></span>
+        <span itemprop="category" content="<%PRODUCT_TYPE%>"></span>
+        <span itemprop="gtin8" content="00000000"></span>
+      </article>
+      <aside class="product__data">
+        <p itemprop="description" class="product__description"><%DESCRIPTION%></p>
+        <p><strong>Colores:</strong> <%COLORS_TEXT%></p>
+        <h2>Acerca de este producto</h2>
+        <%PRODUCT_TYPE_INFO%>
+        <div class="product__price-container" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          <span class="product__currency" itemprop="priceCurrency" content="ARS">$</span>
+          <span class="product__price" itemprop="price"><%PRICE%></span>
+          <link itemprop="availability" href="https://schema.org/InStock" />
+          <span itemprop="priceValidUntil" content="<%PRICE_EXPIRATION%>"></span>
+          <span itemprop="url" content="<%URL%>"></span>
+        </div>
+        <a class="buy" href="<%PRODUCT_URL%>" itemprop="url" target="_blank" rel="noopener">Comprar en FlashCookie</a>
+        <a class="go-to-collection" href="<%COLLECTION_URL%>">Ver más de la colección</a>
+        <%DONATION_BOX%>
+      </aside>
+    </main>
+    <footer>
+        <section class="legal-notice">
+            <p>
+                <strong>Geeks con Onda</strong> es una iniciativa de la
+                <strong>Comunidad de Desarrolladores de Argentina</strong> (CoDeAr), una
+                asociación civil constituida con personería jurídica autorizada por la
+                Dirección General de Inspección de Personas Jurídicas de la Provincia de
+                Córdoba, bajo resolución Nro. 191 C/19, con fecha 11/10/2019, e inscrita
+                en AFIP bajo el CUIT 30-71664952-7.
+            </p>
+
+            <p>
+                <strong>
+                    Todos los fondos recaudados a través de este proyecto son destinados a
+                    la promoción y ejecución de actividades por parte de la Comunidad de
+                    Desarrolladores de Argentina.
+                </strong>
+            </p>
+            <p>
+              <a href="http://qr.afip.gob.ar/?qr=VU46t9SLCOsSqj6RBDg9Bg,," target="_F960AFIPInfo"><img
+                src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg" class="afip-qr" border="0"></a>
+            </p>
+        </section>
+
+        <section class="copyright">
+          Hecho con <3 por <a href="https://codear.org" target="_blank"><img src="/images/codear.svg" class="logo logo--codear"></a>
+        </section>
+      </footer>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148017514-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148017514-3');
+    </script>
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1159269554418075');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1159269554418075&ev=PageView&noscript=1"
+    /></noscript>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
