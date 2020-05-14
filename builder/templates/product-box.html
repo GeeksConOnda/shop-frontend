@@ -10,6 +10,8 @@
     </section>
     <p itemprop="description" class="product__description"><%DESCRIPTION%></p>
     <div class="product__price-container" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+      <span itemprop="id" content="<%ID%>"></span>
+      <span itemprop="price" content="<%PRICE%>.00 ARS"></span>
       <span class="product__currency">$</span>
       <span class="product__price"><%PRICE%></span>
       <link itemprop="availability" href="https://schema.org/InStock" />
@@ -21,7 +23,5 @@
     <span itemprop="sku" content="<%ID%>"></span>
     <span itemprop="category" content="<%PRODUCT_GROUP%>"></span>
     <span itemprop="gtin8" content="00000000"></span>
-    <span itemprop="price" content="<%PRICE%>.00 ARS"></span>
-    <span itemprop="id" content="<%ID>"></span>
   </div>
 </article>
