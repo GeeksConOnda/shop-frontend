@@ -2,13 +2,15 @@ const Renderer = require("./renderer");
 
 const CATEGORIES = require("../configuration/categories.json");
 const COLORS = require("../configuration/colors.json");
+const SKU = require("../configuration/skus.json");
 
 const path = require("path");
 
 class ProductBoxRenderer extends Renderer {
   applyID(template) {
-    const { id } = this.options.design;
-    return template.replace(/<%ID%>/, id);
+    const { productType, design } = this.options;
+    const { id } = design;
+    return template.replace(/<%ID%>/, `${SKU[id]}${CATEGORIES[productType].productTypeId}`);
   }
 
   applyIndex(template) {
