@@ -57,11 +57,13 @@
         <section class="product__image-container" data-base-color="<%BASE_COLOR%>" style="background-color: <%BASE_COLOR%>; border-color: <%BASE_COLOR%>">
           <img itemprop="image" src="<%IMAGE_URL%>" class="product__image">
         </section>
-        <span itemprop="url" content="<%URL%>"></span>
-        <span itemprop="brand" content="GCO"></span>
-        <span itemprop="sku" content="<%ID%>"></span>
-        <span itemprop="category" content="<%PRODUCT_TYPE%>"></span>
-        <span itemprop="gtin8" content="00000000"></span>
+        <meta itemprop="url" content="<%URL%>">
+        <meta itemprop="brand" content="Geeks con Onda">
+        <meta itemprop="sku" content="<%ID%>">
+        <meta itemprop="productID" content="<%ID%>">
+        <meta itemprop="productType" content="<%PRODUCT_GROUP%>">
+        <meta itemprop="category" content="<%PRODUCT_GOOGLE_CATEGORY%>">
+        <meta itemprop="gtin8" content="00000000">
       </article>
       <aside class="product__data">
         <p itemprop="description" class="product__description"><%DESCRIPTION%></p>
@@ -69,11 +71,14 @@
         <h2>Acerca de este producto</h2>
         <%PRODUCT_TYPE_INFO%>
         <div class="product__price-container" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-          <span class="product__currency" itemprop="priceCurrency" content="ARS">$</span>
-          <span class="product__price" itemprop="price"><%PRICE%></span>
-          <link itemprop="availability" href="https://schema.org/InStock" />
-          <span itemprop="priceValidUntil" content="<%PRICE_EXPIRATION%>"></span>
-          <span itemprop="url" content="<%URL%>"></span>
+          <span class="product__currency">$</span>
+          <span class="product__price"><%PRICE%></span>
+          <link itemprop="availability" href="https://schema.org/InStock">
+          <link itemprop="condition" href="https://schema.org/NewCondition">
+          <meta itemprop="price" content="<%PRICE%>">
+          <meta itemprop="priceCurrency" content="ARS">
+          <meta itemprop="priceValidUntil" content="<%PRICE_EXPIRATION%>">
+          <meta itemprop="url" content="<%URL%>"></span>
         </div>
         <a class="buy" href="<%PRODUCT_URL%>" itemprop="url" target="_blank" rel="noopener">Comprar en FlashCookie</a>
         <a class="go-to-collection" href="<%COLLECTION_URL%>">Ver más de la colección</a>
