@@ -1,4 +1,5 @@
 const CATEGORIES = require("../configuration/categories.json");
+const SKU = require("../configuration/skus.json");
 
 const Renderer = require("./renderer");
 const ProductBoxRenderer = require("./product-box-renderer");
