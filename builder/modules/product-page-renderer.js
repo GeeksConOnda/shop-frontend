@@ -53,7 +53,7 @@ class ProductPageRenderer extends Renderer {
   applyID(template) {
     const { productType, design } = this.options;
     const { id } = design;
-    return template.replace(/<%ID%>/, `${SKU[id]}${CATEGORIES[productType].productTypeId}`);
+    return template.replace(/<%ID%>/g, `${SKU[id]}${CATEGORIES[productType].productTypeId}`);
   }
 
   applyProductGoogleCategory(template) {
