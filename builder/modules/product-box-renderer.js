@@ -2,13 +2,15 @@ const Renderer = require("./renderer");
 
 const CATEGORIES = require("../configuration/categories.json");
 const COLORS = require("../configuration/colors.json");
+const SKU = require("../configuration/skus.json");
 
 const path = require("path");
 
 class ProductBoxRenderer extends Renderer {
   applyID(template) {
-    const { id } = this.options.design;
-    return template.replace(/<%ID%>/, id);
+    const { productType, design } = this.options;
+    const { id } = design;
+    return template.replace(/<%ID%>/, `${SKU[id]}${CATEGORIES[productType].productTypeId}`);
   }
 
   applyIndex(template) {
@@ -67,6 +69,11 @@ class ProductBoxRenderer extends Renderer {
     return template.replace(/<%IMAGE_URL%>/g, `/images/products/fc/${imageFileName}`);
   }
 
+  applyOpenGraphImageURL(template) {
+    const { imageFileName } = this.options;
+    return template.replace(/<%IMAGE_OG_URL%>/g, `/images/products/og/${imageFileName}`);
+  }
+
   applyProductPageURL(template) {
     const { productType, design } = this.options;
     const { id } = design;
@@ -111,6 +118,12 @@ class ProductBoxRenderer extends Renderer {
     const { productType } = this.options;
     const { group } = CATEGORIES[productType];
     return template.replace(/<%PRODUCT_GROUP%>/g, group);
+  }
+
+  applyProductGoogleCategory(template) {
+    const { productType } = this.options;
+    const { googleCategoryId } = CATEGORIES[productType];
+    return template.replace(/<%PRODUCT_GOOGLE_CATEGORY%>/g, googleCategoryId);
   }
 
   applyIWantThis(template) {

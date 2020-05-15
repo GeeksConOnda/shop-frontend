@@ -1,4 +1,5 @@
 const CATEGORIES = require("../configuration/categories.json");
+const SKU = require("../configuration/skus.json");
 
 const Renderer = require("./renderer");
 const ProductBoxRenderer = require("./product-box-renderer");
@@ -47,6 +48,18 @@ class ProductPageRenderer extends Renderer {
   applyCollectionURL(template) {
     const { id } = this.options.design;
     return template.replace(/<%COLLECTION_URL%>/g, `/coleccion/${id}`);
+  }
+
+  applyID(template) {
+    const { productType, design } = this.options;
+    const { id } = design;
+    return template.replace(/<%ID%>/, `${SKU[id]}${CATEGORIES[productType].productTypeId}`);
+  }
+
+  applyProductGoogleCategory(template) {
+    const { productType } = this.options;
+    const { googleCategoryId } = CATEGORIES[productType];
+    return template.replace(/<%PRODUCT_GOOGLE_CATEGORY%>/g, googleCategoryId);
   }
 
   execute() {
