@@ -69,6 +69,11 @@ class ProductBoxRenderer extends Renderer {
     return template.replace(/<%IMAGE_URL%>/g, `/images/products/fc/${imageFileName}`);
   }
 
+  applyOpenGraphImageURL(template) {
+    const { imageFileName } = this.options;
+    return template.replace(/<%IMAGE_OG_URL%>/g, `/images/products/og/${imageFileName}`);
+  }
+
   applyProductPageURL(template) {
     const { productType, design } = this.options;
     const { id } = design;

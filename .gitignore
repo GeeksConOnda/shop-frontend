@@ -27,6 +27,7 @@ yarn-error.log*
 
 # Product images
 /images/products/fc/
+/images/products/og/
 
 # Product listings
 /listings/**/*.html

@@ -3,6 +3,7 @@ const DESIGNS = require("../configuration/designs.json");
 
 const ProductBoxRenderer = require("./product-box-renderer");
 const ImageDownloader = require("./image-downloader");
+const OGImageGenerator = require("./og-image-generator");
 const Renderer = require("./renderer");
 
 const fs = require("fs");
@@ -40,7 +41,17 @@ class ListingByCategoryRenderer extends Renderer {
         const imageUrl = firstImage.split("/").pop();
         const imageFileName = path.basename(imageUrl);
 
-        new ImageDownloader({ url: firstImage, imageFileName }).execute();
+        new ImageDownloader({ url: firstImage, imageFileName }).execute().then((writtenImageFile) => {
+          const { baseColor, canRestrictColors, products } = design;
+          let color;
+
+          if (canRestrictColors) {
+            color = baseColor;
+          } else {
+            color = products[productType].colors[0];
+          }
+          new OGImageGenerator({ image: writtenImageFile, color }).execute();
+        });
 
         productGroupElements.push(new ProductBoxRenderer({
           design, productType, imageFileName,

@@ -6,7 +6,8 @@
       <%COLORS%>
     </ul>
     <section class="product__image-container" data-base-color="<%BASE_COLOR%>" style="background-color: <%BASE_COLOR%>; border-color: <%BASE_COLOR%>">
-      <a href="<%PRODUCT_PAGE%>"><img itemprop="image" src="<%IMAGE_URL%>" class="product__image"></a>
+      <a href="<%PRODUCT_PAGE%>"><img src="<%IMAGE_URL%>" class="product__image"></a>
+      <meta itemprop="image" content="https://geekscononda.com<%IMAGE_OG_URL%>">
     </section>
     <p itemprop="description" class="product__description"><%DESCRIPTION%></p>
     <div class="product__price-container" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
