@@ -115,6 +115,12 @@ class ProductBoxRenderer extends Renderer {
     return template.replace(/<%PRODUCT_GROUP%>/g, group);
   }
 
+  applyProductGoogleCategory(template) {
+    const { productType } = this.options;
+    const { googleCategoryId } = CATEGORIES[productType];
+    return template.replace(/<%PRODUCT_GOOGLE_CATEGORY%>/g, googleCategoryId);
+  }
+
   applyIWantThis(template) {
     const { iWantThis } = this.options;
     return template.replace(/<%I_WANT_THIS%>/g, iWantThis)

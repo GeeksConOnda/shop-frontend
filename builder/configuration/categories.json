@@ -5,7 +5,8 @@
     "path": "/remeras/corte-recto",
     "group": "Remeras",
     "description": "La clásica remera de corte recto. Confeccionada con tela de 100% algodón. Disponible en talles XS a XXL.",
-    "productTypeId": 25
+    "productTypeId": 25,
+    "googleCategoryId": 212
   },
   "t-shirt-male-v-neck": {
     "title": "Remeras de corte recto, cuello en V",
@@ -13,7 +14,8 @@
     "path": "/remeras/corte-recto-cuello-v",
     "group": "Remeras",
     "description": "Una alternativa a la típica remera de corte recto, con escote en V. Confeccionada con tela de 100% algodón. Disponible en talles XS a XXL.",
-    "productTypeId": 26
+    "productTypeId": 26,
+    "googleCategoryId": 212
   },
   "t-shirt-female": {
     "title": "Remeras de corte entallado",
@@ -21,7 +23,8 @@
     "path": "/remeras/corte-entallado",
     "group": "Remeras",
     "description": "Para quienes disfrutan de remeras más ceñidas al cuerpo, presentamos esta remera de corte entallado. Confeccionada con tela de 100% algodón. Disponible en talles XS a L.",
-    "productTypeId": 27
+    "productTypeId": 27,
+    "googleCategoryId": 212
   },
   "t-shirt-kids": {
     "title": "Remeras para niñas y niños",
@@ -29,7 +32,8 @@
     "path": "/remeras/para-chicas-y-chicos",
     "group": "Remeras",
     "description": "Para las pequeñas personitas de nuestras vidas, presentamos esta remera para niñas y niños, confeccionada con tela de 100% algodón. Disponible en talles XS a XXL.",
-    "productTypeId": 28
+    "productTypeId": 28,
+    "googleCategoryId": 5410
   },
   "t-shirt-baby": {
     "title": "Remeras para bebés",
@@ -37,7 +41,8 @@
     "path": "/remeras/para-bebes",
     "group": "Remeras",
     "description": "Para bebés con toda la onda, presentamos esta remera, confeccionada con tela de 100% algodón fino. Disponible en talles S a L.",
-    "productTypeId": 29
+    "productTypeId": 29,
+    "googleCategoryId": 5410
   },
   "kimono": {
     "title": "Kimonos",
@@ -53,7 +58,8 @@
     "path": "/buzos/canguro",
     "group": "Buzos",
     "description": "Buzo tipo canguro. De algodón frisa con capucha y bolsillo delantero. Disponible en talles S a XL.",
-    "productTypeId": 30
+    "productTypeId": 30,
+    "googleCategoryId": 212
   },
   "hoodie-zip": {
     "title": "Buzos tipo canguro, con cierre",
@@ -61,28 +67,32 @@
     "path": "/buzos/con-cierre",
     "group": "Buzos",
     "description": "Buzo de algodón frisa con cierre reforzado, capucha y bolsillos delanteros. Disponible en talles S a XL.",
-    "productTypeId": 31
+    "productTypeId": 31,
+    "googleCategoryId": 212
   },
   "bag": {
     "title": "Bolsas de tela",
     "single": "Bolsa de tela",
     "path": "/bolsas-de-tela",
     "description": "Bolsa de gabardina. 100% algodón. Tiras reforzadas de 35 cms de largo. Mide 36 cm de ancho y 41 cm de largo.",
-    "productTypeId": 32
+    "productTypeId": 32,
+    "googleCategoryId": 5608
   },
   "poster": {
     "title": "Cuadros",
     "single": "Cuadro",
     "path": "/cuadros",
     "description": "Cuadros impresos en papel Rives Design, de 250 gramos. Vidrio de 3 mms de espesor. Marco de pino pintado en negro mate. Varillas de 3 cms de ancho, con 1 cm de espesor.",
-    "productTypeId": 35
+    "productTypeId": 35,
+    "googleCategoryId": 500044
   },
   "postcard": {
     "title": "Postales",
     "single": "Postal",
     "path": "/postales",
     "description": "10 postales impresas en papel cartulina de 270 grs.",
-    "productTypeId": 36
+    "productTypeId": 36,
+    "googleCategoryId": 3871
   },
   "sneakers-male": {
     "title": "Zapatillas de talle grande",
@@ -90,21 +100,24 @@
     "group": "Zapatillas",
     "path": "/zapatillas/talle-grande",
     "description": "Zapatillas de ancho regular, en talles 39 a 44.",
-    "productTypeId": 41
+    "productTypeId": 41,
+    "googleCategoryId": 187
   },
   "sneakers-female": {
     "title": "Zapatillas de talle pequeño",
     "single": "Zapatillas de talle pequeño",
     "path": "/zapatillas/talle-chico",
     "description": "Zapatillas de ancho reducido, en talles 36 a 40.",
-    "productTypeId": 42
+    "productTypeId": 42,
+    "googleCategoryId": 187
   },
   "pillow": {
     "title": "Almohadones",
     "single": "Almohadón",
     "path": "/almohadones",
     "description": "Almohadón de 44 x 44 cms. Confeccionado en gabardina, relleno de vellón sintético.",
-    "productTypeId": 33
+    "productTypeId": 33,
+    "googleCategoryId": 4453
   },
   "stickers": {
     "title": "Stickers",
@@ -112,7 +125,8 @@
     "group": "Stickers",
     "path": "/stickers/mate",
     "description": "Stickers autoadhesivos circulares, de variados tamaños (5cm a 25cm).",
-    "productTypeId": 38
+    "productTypeId": 38,
+    "googleCategoryId": 4054
   },
   "metal-stickers": {
     "title": "Stickers metalizados",
@@ -120,13 +134,15 @@
     "group": "Stickers",
     "path": "/stickers/metalizados",
     "description": "Stickers autoadhesivos circulares, metalizados, de variados tamaños (5cm a 25cm).",
-    "productTypeId": 39
+    "productTypeId": 39,
+    "googleCategoryId": 4054
   },
   "shirts": {
     "title": "Camisas de jean",
     "single": "Camisa de jean",
     "path": "/camisas",
     "description": "Camisa unisex en denim. Disponible en talles XS a XXL. La estampa va sobre la espalda de la camisa.",
-    "productTypeId": 44
+    "productTypeId": 44,
+    "googleCategoryId": 212
   }
 }
