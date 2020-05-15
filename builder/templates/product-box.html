@@ -1,5 +1,5 @@
 <article class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-  <span itemprop="position" content="<%INDEX%>"></span>
+  <meta itemprop="position" content="<%INDEX%>">
   <div itemprop="item" itemscope itemtype="https://schema.org/Product">
     <h3 itemprop="name" class="product__name"><a href="<%PRODUCT_PAGE%>"><%NAME%></a></h3>
     <ul class="product__colors" itemprop="color" content="<%COLORS_TEXT%>">
@@ -10,18 +10,18 @@
     </section>
     <p itemprop="description" class="product__description"><%DESCRIPTION%></p>
     <div class="product__price-container" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-      <span itemprop="id" content="<%ID%>"></span>
-      <span itemprop="price" content="<%PRICE%>.00 ARS"></span>
       <span class="product__currency">$</span>
       <span class="product__price"><%PRICE%></span>
-      <link itemprop="availability" href="https://schema.org/InStock" />
-      <span itemprop="priceValidUntil" content="<%PRICE_EXPIRATION%>"></span>
-      <span itemprop="url" content="<%URL%>"></span>
+      <link itemprop="availability" href="https://schema.org/InStock">
+      <link itemprop="condition" href="https://schema.org/NewCondition">
+      <meta itemprop="priceSpecification" content="<%PRICE%>.00 ARS">
+      <meta itemprop="priceValidUntil" content="<%PRICE_EXPIRATION%>">
+      <meta itemprop="url" content="<%URL%>"></span>
     </div>
-    <span itemprop="url" content="<%URL%>"></span>
-    <span itemprop="brand" content="GCO"></span>
-    <span itemprop="sku" content="<%ID%>"></span>
-    <span itemprop="category" content="<%PRODUCT_GROUP%>"></span>
-    <span itemprop="gtin8" content="00000000"></span>
+    <meta itemprop="url" content="<%URL%>">
+    <meta itemprop="brand" content="Geeks con Onda">
+    <meta itemprop="sku" content="<%ID%>">
+    <meta itemprop="category" content="<%PRODUCT_GROUP%>">
+    <meta itemprop="gtin8" content="00000000">
   </div>
 </article>
