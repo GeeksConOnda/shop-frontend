@@ -1,5 +1,4 @@
 const CATEGORIES = require("../configuration/categories.json");
-const DESIGNS = require("../configuration/designs.json");
 
 const ProductBoxRenderer = require("./product-box-renderer");
 const ImageDownloader = require("./image-downloader");
@@ -13,7 +12,7 @@ const withProductType = (productType) => design => Object.keys(design.products).
 
 class ListingByCategoryRenderer extends Renderer {
   applyProductGroups(template) {
-    const { page, productBoxTemplate } = this.options;
+    const { designs, page, productBoxTemplate } = this.options;
     const productGroups = [];
     let position = 0;
 
@@ -28,7 +27,7 @@ class ListingByCategoryRenderer extends Renderer {
         `<section class="product-group">`,
       ];
 
-      DESIGNS.filter(withProductType(productType)).forEach(design => {
+      designs.filter(withProductType(productType)).forEach(design => {
         this.log("working on design: %s", design.id);
 
         if (!design.products[productType]) {

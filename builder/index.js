@@ -1,5 +1,6 @@
+const scrapeFlashCookie = require("@geekscononda/scraper-flash-cookie");
+
 const CATEGORIES = require("./configuration/categories.json");
-const DESIGNS = require("./configuration/designs.json");
 const PAGES = require("./configuration/pages.json");
 
 const TemplateLoader = require("./modules/template-loader");
@@ -13,27 +14,30 @@ const templateKeys = ["listing-page", "product-page", "donation-box", "product-b
 
 const TEMPLATES = new TemplateLoader({ templateKeys }).execute();
 
-[
-  new ListingByCategoryRenderer({
-    pages: PAGES,
-    template: TEMPLATES["listing-page"],
-    productBoxTemplate: TEMPLATES["product-box"],
-    menuBoxTemplate: TEMPLATES["menu-box"]
-  }),
+scrapeFlashCookie().then((designs) => {
+  [
+    new ListingByCategoryRenderer({
+      designs,
+      pages: PAGES,
+      template: TEMPLATES["listing-page"],
+      productBoxTemplate: TEMPLATES["product-box"],
+      menuBoxTemplate: TEMPLATES["menu-box"]
+    }),
 
-  new ProductPageRenderer({
-    designs: DESIGNS,
-    template: TEMPLATES["product-page"],
-    templates: TEMPLATES,
-    donationBoxTemplate: TEMPLATES["donation-box"],
-    menuBoxTemplate: TEMPLATES["menu-box"]
-  }),
+    new ProductPageRenderer({
+      designs,
+      template: TEMPLATES["product-page"],
+      templates: TEMPLATES,
+      donationBoxTemplate: TEMPLATES["donation-box"],
+      menuBoxTemplate: TEMPLATES["menu-box"]
+    }),
 
-  new ListingByCollectionRenderer({
-    designs: DESIGNS,
-    template: TEMPLATES["collection-page"],
-    collectionItemBoxTemplate: TEMPLATES["collection-item-box"],
-    menuBoxTemplate: TEMPLATES["menu-box"],
-    donationBoxTemplate: TEMPLATES["donation-box"]
-  })
-].forEach(renderer => renderer.execute());
+    new ListingByCollectionRenderer({
+      designs,
+      template: TEMPLATES["collection-page"],
+      collectionItemBoxTemplate: TEMPLATES["collection-item-box"],
+      menuBoxTemplate: TEMPLATES["menu-box"],
+      donationBoxTemplate: TEMPLATES["donation-box"]
+    })
+  ].forEach(renderer => renderer.execute());
+});

@@ -1,9 +1,10 @@
 {
-  "name": "@codear/geeks-con-onda",
+  "name": "@geekscononda/shop-frontend",
   "scripts": {
     "build": "node builder"
   },
   "devDependencies": {
+    "@geekscononda/scraper-flash-cookie": "0.0.2",
     "debug": "^4.1.1",
     "jimp": "^0.10.3"
   }
