@@ -31,3 +31,5 @@ yarn-error.log*
 
 # Product listings
 /listings/**/*.html
+
+.vercel
